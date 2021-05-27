@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Main window</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>This is main window</h1>
+
+    <webview id="wv" src="./webview.html" autosize="on"></webview>
+    <script src="./index.js"></script>
+  </body>
+</html>
